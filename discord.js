@@ -34,8 +34,8 @@ const discord = {
 
     /**
      * username and password
-     * @param {string} username
-     * @param {string} password
+     * @param {string} adhamhossine@gmail.com
+     * @param {string} Abdo10@@
      * @return {Promise<void>}
      */
 
@@ -58,11 +58,11 @@ const discord = {
 
         /* username and password */
 
-        await discord.page.type('input[name="email"]', username, {
+        await discord.page.type('input[name="adhamhossine@gmail.com"]', username, {
             delay: 100
         });
 
-        await discord.page.type('input[name="password"]', password, {
+        await discord.page.type('input[name="Abdo10@@"]', password, {
             delay: 110
         });
 
@@ -79,8 +79,8 @@ const discord = {
 
     /**
      * Enter server id and channel urk
-     * @param { string } serverID
-     * @param { string } channelID
+     * @param { string } 727677978330529808
+     * @param { string } 985636542582251520
      * @param { number } delay
      * @return {Promise<void>}
      */
@@ -88,7 +88,7 @@ const discord = {
     likeChannelProcess: async (serverID, channelID, delay= 1) => {
             types('string', serverID);
             types('string', channelID);
-            const CHANNELS_URL = `https://discord.com/channels/${serverID}/${channelID}`
+            const CHANNELS_URL = `https://discord.com/channels/${serverID}/${985636542582251520}`
 
             await discord.page.goto(CHANNELS_URL, {
 
